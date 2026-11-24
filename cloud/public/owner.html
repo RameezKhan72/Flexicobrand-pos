@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flexico — Owner Cloud</title><link rel="stylesheet" href="/owner/owner.css"></head>
+<body><div class="shell"><aside class="sidebar"><div class="logo"><span class="mark">F</span><div><b>FLEXICO</b><small>OWNER CLOUD</small></div></div>
+  <nav><a href="#overview" class="active" id="overview-link">◈ &nbsp; Overview</a><a href="#inventory">▦ &nbsp; Inventory</a><a href="#orders">◎ &nbsp; COD &amp; Returns</a><a href="#receipts">≡ &nbsp; Latest Sales</a></nav>
+  <div class="side-end"><div class="mode">● Single-store read-only mirror</div><button id="logout" type="button">Log out</button></div></aside>
+  <main class="main"><header class="topbar"><div><div class="eyebrow">FLEXICO WATCHES / MANAGEMENT</div><h1>Business overview <span class="emphasis">at a glance.</span></h1></div><div class="top-actions"><button id="refresh">↻ Refresh</button><div class="avatar">FX</div></div></header>
+    <section id="alert" aria-live="polite"></section>
+    <section class="metrics" id="metrics"></section>
+    <div class="section-heading" id="inventory"><div><h2>Inventory insights</h2><p>Synced store and warehouse stock, including low-stock alerts</p></div><span id="stock-label" class="small-pill">Awaiting sync</span></div>
+    <div class="panel table-scroll"><table><thead><tr><th>Product / SKU</th><th>Category</th><th>Store</th><th>Warehouse</th><th>Status</th></tr></thead><tbody id="stock-table"></tbody></table></div>
+    <div class="two-cols" id="orders"><section class="panel"><div class="panel-heading"><h2>Outstanding COD</h2><span>Pending balance</span></div><div id="cod-list"></div></section>
+      <section class="panel"><div class="panel-heading"><h2>Latest returns</h2><span>Refund activity</span></div><div id="returns-list"></div></section></div>
+    <div class="section-heading" id="receipts"><div><h2>Recent sales</h2><p>Receipts uploaded by the single store POS</p></div></div>
+    <div class="panel table-scroll"><table><thead><tr><th>Receipt</th><th>Customer</th><th>Date</th><th>Bill</th><th>Paid at checkout</th><th>Sale status</th></tr></thead><tbody id="sales-table"></tbody></table></div>
+    <footer>Flexico Cloud Owner Portal · Operational read-only mirror · Not an FBR-compliant tax reporting portal</footer></main></div>
+<div class="overlay" id="login-layer"><div class="login-card"><div class="logo"><span class="mark">F</span><div><b>FLEXICO</b><small>PRIVATE OWNER CLOUD</small></div></div>
+  <h2>Welcome back.</h2><p>Secure sign-in to your remote store overview.</p><form id="login-form"><label>Username<input name="username" autocomplete="username" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+  <button type="submit" class="primary">Sign in to dashboard</button><div class="login-error" id="login-error" role="alert"></div></form>
+  <small>Read-only mirror. Billing continues locally when internet is unavailable.</small></div></div>
+<script src="/owner/owner.js" defer></script></body></html>

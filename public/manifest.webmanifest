@@ -1,0 +1,15 @@
+{
+  "id": "/",
+  "name": "FLEXICO Lifestyle POS",
+  "short_name": "Flexico POS",
+  "description": "Flexico Watches retail point of sale. Connects to an authorized POS server.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f1e2cc",
+  "theme_color": "#d8c1a0",
+  "icons": [
+    {"src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

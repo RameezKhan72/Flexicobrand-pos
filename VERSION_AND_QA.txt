@@ -1,0 +1,11 @@
+FLEXICO POS v1.5 RC — Full Catalogue Import Edition
+
+CHANGELOG:
+- Added Shopify Admin Products CSV upload, preview, and full active/published variant import.
+- Preserves prices, compare-at prices, SKUs, barcodes, options, descriptions and product photos URLs.
+- Ignores image-only lines and unpublished/draft products.
+- Idempotent re-import preserves all original local stock and manual products.
+- CSV records can be linked to Shopify API IDs when credentials become available.
+- Live Shopify website itself was not accessible as a complete machine-readable feed from this build environment.
+
+See SHOPIFY_FULL_CATALOGUE_IMPORT_V1_5.md before importing.

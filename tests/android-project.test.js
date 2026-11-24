@@ -1,0 +1,22 @@
+'use strict';
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.join(__dirname,'..');
+test('Android companion source enforces HTTPS and rejects SSL errors',()=>{
+ const manifest=fs.readFileSync(path.join(root,'android-app/app/src/main/AndroidManifest.xml'),'utf8');
+ const activity=fs.readFileSync(path.join(root,'android-app/app/src/main/java/com/flexico/pos/MainActivity.java'),'utf8');
+ const gradle=fs.readFileSync(path.join(root,'android-app/app/build.gradle'),'utf8');
+ const workflow=fs.readFileSync(path.join(root,'.github/workflows/build-android.yml'),'utf8');
+ assert.match(manifest,/usesCleartextTraffic="false"/);
+ assert.match(manifest,/INTERNET/);
+ assert.match(activity,/"https"\.equalsIgnoreCase\(u\.getScheme\(\)\)/);
+ assert.match(activity,/handler\.cancel\(\)/);
+ assert.match(activity,/MIXED_CONTENT_NEVER_ALLOW/);
+ assert.match(activity,/sameTrustedOrigin\(request\.getUrl\(\)\)/);
+ assert.match(activity,/does not store sales offline|does not embed|standalone offline checkout is NOT supported/i);
+ assert.match(gradle,/applicationId 'com\.flexico\.pos'/);
+ assert.match(workflow,/assembleDebug/);
+ assert.match(workflow,/upload-artifact/);
+});

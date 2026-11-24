@@ -1,0 +1,18 @@
+data/*.sqlite*
+node_modules/
+.DS_Store
+
+.env
+.env.*
+cloud/.env
+public/uploads/
+# Android build outputs / signing material
+android-app/.gradle/
+android-app/local.properties
+android-app/**/build/
+*.keystore
+*.jks
+*.apk
+# Generated backups and operational credentials
+data/backups/
+*.log

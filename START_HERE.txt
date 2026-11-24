@@ -1,0 +1,19 @@
+FLEXICO POS v1.0 RC1 - TESTING ONLY (NOT YET COMMERCIAL GO-LIVE)
+=====================================================================
+
+WINDOWS STORE PC:
+  1. BACK UP the complete OLD data folder AND public/uploads photos.
+  2. Extract this ZIP into a NEW folder. Do not overwrite the old folder.
+  3. Copy backed-up old data and public/uploads into this new folder.
+  4. Double-click start-windows.bat (requires Node.js >= 22.13).
+  5. Open http://localhost:3147 and log in.
+  6. Test Receivables, checkout, returns, print and inventory carefully.
+
+OPTIONAL CLOUD OWNER DASHBOARD:
+  See cloud/README.md. Requires separately provisioned managed Postgres,
+  HTTPS cloud hosting and environment secrets. Not deployed in this ZIP.
+
+COMPLIANCE:
+  Do not use test receipts as FBR tax invoices. External Shopify, FBR,
+  Leopard Courier and WhatsApp integrations are NOT LIVE.
+  See GO_LIVE_CHECKLIST.md and TEST_PLAN.md for remaining acceptance gates.

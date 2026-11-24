@@ -1,0 +1,49 @@
+/* FLEXICO v1.3: Warm cream-led retail identity, champagne gold accents. */
+:root{
+ --page:#f0e3d0;--white:#fff9ef;--ink:#332619;--muted:#776d5e;
+ --dark:#ece0cb;--dark2:#e5d7c0;--line:#ded0b8;
+ --accent:#ad7835;--accent-light:#f7ecd9;--shadow:0 9px 24px rgba(94,67,31,.08);
+}
+body{background:var(--page);color:var(--ink)}
+.app-shell{background:linear-gradient(150deg,#eee0c9 0%,#f8f0e3 54%,#efe0ca 100%)}
+.sidebar{background:linear-gradient(180deg,#f1e4d0,#e6d6bc)!important;border-right:1px solid #d8c4a3!important;color:#55452f!important;box-shadow:6px 0 25px #7a5e2d0a}
+.sidebar .brand{border-bottom:1px solid #d8c5a8;padding-bottom:15px;margin-bottom:13px!important}
+.brand-mark{background:#fdf2dc!important;color:#a87639!important;border:1px solid #cfb281!important;border-radius:8px!important}
+.brand-word,.brand-word b{color:#6a461e!important;font-weight:600!important;letter-spacing:2.6px}
+.brand-word small{font-size:7px!important;letter-spacing:1.35px!important;color:#936f42!important}
+.nav-label{color:#997e54!important;font-size:9px}
+.sidebar .nav-button{color:#63513b!important;border-radius:9px!important}
+.sidebar .nav-button:hover{color:#3e301b!important;background:#fff4df!important}
+.sidebar .nav-button.active{background:#fff7e8!important;color:#5e3916!important;box-shadow:inset 3px 0 #b98a4d,0 3px 12px #9f7b4520!important}
+.sidebar .nav-button.active .icon{color:#af7834!important}
+.sidebar-bottom{border-top-color:#d2bb97!important}.sidebar .account-line b{color:#47351e!important}.sidebar .account-line span{color:#8b7049!important}
+.sidebar-logout{border-color:#c9ae87!important;color:#5a4327!important;background:#f6e8d2!important}.sidebar-logout:hover{background:#fff6e6!important}
+.pro-sidebar-tag{background:#e9d7bd!important;border:1px solid #d7bd95!important;color:#85633d!important}
+.topbar{background:#fbf3e7!important;border-bottom:1px solid #e3d3be!important}
+.breadcrumb strong,.breadcrumb b{color:#6c4a22!important}
+.page{background:transparent}.page h1{color:#3d2d1b!important}.eyebrow{color:#a27540!important}
+.panel{background:#fffaf2!important;border-color:#e4d3bb!important;box-shadow:0 7px 24px #a383530b!important}
+.panel-header{border-bottom-color:#e9dac5!important}.panel-title{color:#4f3a22!important}
+.btn-primary,.checkout-btn{background:#75502b!important;border-color:#75502b!important;color:#fffaf0!important}
+.btn-primary:hover,.checkout-btn:hover{background:#92612e!important}
+.btn-outline{background:#fff9ed!important;border-color:#d5b98c!important;color:#61472a!important}
+.btn-outline:hover{background:#f8ead4!important}
+.btn-gold{background:#b88a49!important;color:#fffaf2!important;border-color:#b88a49!important}
+.stat-value{color:#4c3921}.stat-icon,.mini-kpi .mini-icon{background:#f6e8cc!important;color:#9b6d2d!important}
+.welcome-strip,.pro-hero{background:linear-gradient(115deg,#f4e3c6,#e5cdab)!important;border:1px solid #d3b489!important;color:#4a331c!important}
+.welcome-strip h2,.pro-hero h2{color:#4e3518!important}.welcome-strip p,.pro-hero p{color:#6b573d!important}
+.welcome-strip .btn,.pro-hero .btn{background:#ac8045!important;color:#fffaf0!important}
+.test-chip{background:#f3e7d0!important;color:#78582f!important;border-color:#dfcaa8!important}
+.auth-story{background:radial-gradient(circle at 90% 20%,#f7e7c9,#e4cb9f 70%)!important;border-right:1px solid #dec298}
+.auth-copy h1,.auth-copy h1 span{color:#68451e!important}.auth-copy p{color:#70563b!important}
+.auth-story .auth-foot,.auth-story .auth-footnote{color:#846f50!important}
+.auth-form-area{background:#fff9ef!important}.auth-form-inner h2{color:#4f341b!important}
+.lux-dial{box-shadow:0 0 0 5px #e4c78f,0 0 0 7px #aa8b5f,0 0 30px #61411d48}
+.input,.select,input[type=number],input[type=text],textarea{border-color:#dac9b0;color:#413220}
+.input:focus,.select:focus{border-color:#b38b50!important;box-shadow:0 0 0 3px #be955b24!important}
+.catalog-hero{background:linear-gradient(115deg,#ecd1a7,#f8eedc)!important;border:1px solid #d0b288;color:#513920!important}
+.catalog-hero p,.catalog-hero h2{color:#4e3820!important}.catalog-hero-art{color:#a77839!important}
+.pro-table th,.data-table thead{background:#f7ecdc!important}.data-table tbody tr:hover,.pro-table tbody tr:hover{background:#fff2df!important}
+@media(max-width:640px){.mobile-dock{background:#fbefdd!important;border-top:1px solid #d8bc91!important}.mobile-dock button.active{background:#e8d2ae!important}}
+@media print{.sidebar,.mobile-dock,.topbar,.mobile-menu-shade{display:none!important}.page{background:transparent!important}.receipt-paper{background:white!important;box-shadow:none!important}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}

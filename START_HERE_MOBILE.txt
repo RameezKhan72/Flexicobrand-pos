@@ -1,0 +1,15 @@
+FLEXICO POS v1.2 — MOBILE/ANDROID TEST BUILD SOURCE
+
+1) Existing Windows POS: follow MOBILE_AND_RELEASE_GUIDE.md.
+2) Want an Android APK? Source is in android-app/.
+   Follow android-app/README.md to build debug app-debug.apk
+   using Android Studio or GitHub Actions.
+3) IMPORTANT: An APK is NOT included because Android SDK and
+   Gradle were unavailable in the build environment.
+4) The Android app connects to a trusted HTTPS POS server; it does
+   not contain an independent offline checkout database.
+5) All 15 automated POS tests passed TWICE; see QA_REPORT.md.
+6) Shopify/FBR/courier/WhatsApp live integrations still need
+   verified client access, external approval, deployment/testing.
+
+Do not sell to real customers before live compliance and client acceptance.
